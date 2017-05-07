@@ -36,7 +36,7 @@ import butterknife.Unbinder;
  */
 public class PermissionSampleActivity extends RuntimePermissionActivity {
     // Single permission request code
-    private static final int REQUEST_CALL_PERMISSIONS = 101;
+    private static final int REQUEST_CONTACT_PERMISSIONS = 101;
     private static final int REQUEST_CAMERA_PERMISSIONS = 102;
     private static final int REQUEST_EXTERNAL_PERMISSIONS = 103;
     // ===============
@@ -60,7 +60,7 @@ public class PermissionSampleActivity extends RuntimePermissionActivity {
             // Ask Single Permission
             case R.id.btnAccessContact:
                 if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-                    askRequestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, R.string.enable_permission, REQUEST_CALL_PERMISSIONS);
+                    askRequestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, R.string.enable_permission, REQUEST_CONTACT_PERMISSIONS);
                 } else {
                     readContactEnable();
                 }
@@ -117,7 +117,7 @@ public class PermissionSampleActivity extends RuntimePermissionActivity {
     public void onRequestPermissionsGranted(int requestCode) {
         switch (requestCode) {
             // Single permission granted
-            case REQUEST_CALL_PERMISSIONS:
+            case REQUEST_CONTACT_PERMISSIONS:
                 readContactEnable();
                 break;
             case REQUEST_CAMERA_PERMISSIONS:

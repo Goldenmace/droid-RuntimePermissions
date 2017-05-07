@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidRuntimePermission.iml" filepath="$PROJECT_DIR$/AndroidRuntimePermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RuntimePermissions.iml" filepath="$PROJECT_DIR$/RuntimePermissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
